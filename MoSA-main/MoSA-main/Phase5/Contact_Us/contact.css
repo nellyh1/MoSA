@@ -1,0 +1,66 @@
+
+@font-face {
+  font-family: futura-medium;
+  src: url(MoSA/Resources/Futura\ Medium/Futura\ Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: futura-heavy;
+  src: url(MoSA/Resources/futura\ heavy/Futura\ Heavy.ttf) format("ttf");
+  src: url(MoSA/Resources/futura\ heavy/Futura\ Std\ Heavy.ttf) format("ttf");
+}
+div.elem-group {
+  margin: 40px 0;
+}
+
+form {
+  color: white;
+  font-family: futura-medium;
+  margin-left: 350px;
+  margin-top: 50px;
+  width: 800px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+label {
+  display: block;
+  font-family: futura-medium;
+  padding-bottom: 4px;
+  font-size: 1.25em;
+  color: white
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: futura-medium;
+  width: 500px;
+  padding: 8px;
+}
+
+textarea {
+  height: 250px;
+}
+
+button {
+  height: 50px;
+  background: green;
+  color: white;
+  border: 2px solid darkgreen;
+  font-size: 1.25em;
+  font-family: futura-medium;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid black;
+}
+
+

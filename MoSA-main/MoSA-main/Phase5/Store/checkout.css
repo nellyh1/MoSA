@@ -1,0 +1,378 @@
+@font-face {
+  font-family: 'futura-medium';
+  src: url('../global_assets/futura_medium.woff') format('woff'),
+       url('../global_assets/futura_medium.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futura-heavy';
+  src: url('../global_assets/futura_heavy.woff2') format('woff2'),
+       url('../global_assets/futura_heavy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+background-color: #23395D;
+margin:0;
+overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: futura-heavy;
+}
+
+p, div { font-family: futura-medium; }
+
+
+#mosa {
+width: 18%;
+
+}
+
+
+.header_nav {
+background-color: white;
+width: 100%;
+vertical-align: top;
+}
+
+.header_nav_upper { 
+width: 100%; 
+padding-top: 31px;
+padding-left: 12.5%;
+margin-left: 40px;
+}
+
+.header_nav_upper a:hover, a:visited, a:active {
+color: black;
+text-decoration: none;
+}
+
+.header_logo {
+display: inline-block;
+font-size: 70px;
+line-height: 1em;
+margin: 0;
+}
+
+.header_nav_lower {
+/* padding is 40 less than nav_upper 
+because of the padding in #navbar a */
+padding-left: 12.5%;
+margin-top: 20px;
+}
+
+#navbar {
+overflow: hidden;
+background-color: white;
+margin: 0;
+width: 100%;
+font-family: futura-heavy;
+}
+
+#navbar a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding-left: 30px;
+padding-right: 30px;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 10px;
+text-decoration: none;
+font-size: 25px;
+}
+
+#navbar a:hover {
+background-color: #ddd;
+color: #23395D;
+}
+
+#navbar a.active {
+background-color: #4CAF50;
+color: white;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  background: #23395D;
+  margin: 0 10px;
+}
+
+.payment{
+  background: #f8f8f8;
+  max-width: 50%;
+  margin-top: 10% ;
+  margin-left: 5%;
+  height: auto;
+  padding: 35px;
+  padding-top: 70px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.payment h2{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #23395D;
+}
+
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp .icon-relative{
+ margin-bottom: 2%;
+ 
+}
+
+.card-grp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+  
+  
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  margin-top: 40px;
+  margin: 4% auto;
+  background: #23395D;
+  padding: 2%;
+  text-align: center;
+  color: #f8f8f8;
+  width: 40%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.payment-logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+  line-height: 85px;
+}
+
+.payment-logo:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #23395D;
+  border-radius: 50%;
+}
+
+.payment-logo img{
+  position: relative;
+  margin-top: 18%;
+  width: 55%;
+
+}
+
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+}
+
+.cart {
+  position: absolute;
+  border-radius: 5px;
+  margin-top: 0;
+  width: 30%;
+  display: block;
+  background: #f8f8f8;
+  height: 70%;
+  margin-left: 64%;
+  overflow-x: hidden;
+}
+
+.cart-logo .fas {
+  margin: 3% 45%;  font-size: 40px;
+  color: #555555;
+}
+
+.cart h2 {
+  text-align: center;
+  color: #23395D;
+}
+
+.cart-items {
+  overflow-y: scroll;
+  margin: 2% auto;
+  width: 90%;
+  height: 70%;
+  background: #f8f8f8;
+}
+
+#total {
+  margin: 2% 5%;
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: 'futura-medium';
+  src: url('../global_assets/futura_medium.woff') format('woff'),
+       url('../global_assets/futura_medium.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futura-heavy';
+  src: url('../global_assets/futura_heavy.woff2') format('woff2'),
+       url('../global_assets/futura_heavy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+background-color: #23395D;
+margin:0;
+overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: futura-heavy;
+}
+
+p, div { font-family: futura-medium; }
+
+
+#mosa {
+width: 18%;
+
+}
+
+
+.header_nav {
+background-color: white;
+width: 100%;
+vertical-align: top;
+}
+
+.header_nav_upper { 
+width: 100%; 
+padding-top: 31px;
+padding-left: 12.5%;
+margin-left: 40px;
+}
+
+.header_nav_upper a:hover, a:visited, a:active {
+color: black;
+text-decoration: none;
+}
+
+.header_logo {
+display: inline-block;
+font-size: 70px;
+line-height: 1em;
+margin: 0;
+}
+
+.header_nav_lower {
+/* padding is 40 less than nav_upper 
+because of the padding in #navbar a */
+padding-left: 12.5%;
+margin-top: 20px;
+}
+
+#navbar {
+overflow: hidden;
+background-color: white;
+margin: 0;
+width: 100%;
+font-family: futura-heavy;
+}
+
+#navbar a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding-left: 30px;
+padding-right: 30px;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 10px;
+text-decoration: none;
+font-size: 25px;
+}
+
+#navbar a:hover {
+background-color: #ddd;
+color: #23395D;
+}
+
+#navbar a.active {
+background-color: #4CAF50;
+color: white;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>MoSA</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Museum of Science in Austin">
+	<meta name="author" content="MoSA Team">
+	<link rel = "stylesheet" href="..\global_assets\master.css">
+	<link rel = "stylesheet" href="home.css">
+</head> 
+
+
+<div class="container">
+<header class="header_nav">
+	<div class="header_nav_upper" >
+		<a href = "..\Home\home.html"><img id = "mosa" src = "..\global_assets\mosa_png.png"></a>
+		
+	</div>
+
+	<div class="header_nav_lower">
+		<nav id="navbar">
+			<a href="..\.\Plan Your Visit\plan.html">Plan your visit</a>
+			<a href="..\.\Exhibitions\exhibitions.html">Exhibitions</a>
+			<a href="..\.\Store\store.html">Store</a>
+			<a href="..\.\Contact_Us\contact.php">Contact Us</a>	
+		</nav>
+	</div>
+</header>
+
+<body>
+
+	<div class="content_txt">
+		<h2>Explore the cosmos with us!</h2>
+			
+		<p>
+			The Museum of Space at Austin (MoSA) is a nonprofit educational foundation
+			that maintains the second-largest collection of space and aviation
+			artifacts in Texas.<br>
+			On this website, you can read about our current and upcoming exhibitions, plan a visit, and browse our web store. 
+		</p>
+	</div>
+
+	<div class="content_img">
+		<img src="Assets/nebula.jpg" alt="Photo of Nebula from NASA">
+	</div>
+
+	<footer>
+	  	<p>©MoSA. Last updated: March 10, 2021</p>
+	</footer>
+
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var header_nav_lower = document.getElementById("header_nav_lower");
+	var navTop = header_nav_lower.offsetTop;
+	function myFunction() {
+		if (window.pageYOffset >= navTop) { 
+			header_nav_lower.classList.add("sticky")
+		} 
+		else {
+			header_nav_lower.classList.remove("sticky"); }
+		}
+</script>
+</body>
+</div>
+
+</html>

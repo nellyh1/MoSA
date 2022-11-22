@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>MoSA</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Meuseum of Science in Austin">
+	<meta name="author" content="MoSA Team">
+	<link rel = "stylesheet" href="..\global_assets\master.css">
+	<link rel = "stylesheet" href ="plan.css">
+</head> 
+
+<body>
+	<header class="header_nav">
+		<div class="header_nav_upper" >
+			<a href = "..\Home\home.html"><img id = "mosa" src = "..\global_assets\mosa_png.png"></a>
+			
+		</div>
+	
+		<div class="header_nav_lower">
+			<nav id="navbar">
+				<a href="..\.\Plan Your Visit\plan.html">Plan your visit</a>
+				<a href="..\.\Exhibitions\exhibitions.html">Exhibitions</a>
+				<a href="..\.\Store\store.html">Store</a>
+				<a href="..\.\Contact_Us\contact.php">Contact Us</a>	
+			</nav>
+		</div>
+	</header>
+
+		<!-- This is a temporary Calendar Example. Future better versions will use either javascript or jQuery/PHP for dynamic generation-->>
+		
+	<span>
+		<iframe src="https://calendar.google.com/calendar/embed?src=c_fs82ibh9l2h181qrv1ga329k18%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0; margin-right:20% auto; margin-left: 20%" width="800" height="600" frameborder="0" scrolling="no" ></iframe>
+	
+	</span>
+
+
+
+
+
+	<footer>
+  		<p>Copyright &copy 2021 All Rights Reserved by MoSA. Last updated: March 10, 2021</p>
+  		
+	</footer>
+
+
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky")
+	  } else {
+	    navbar.classList.remove("sticky");
+	  }
+	}
+	</script>
+
+</body>
+</html>

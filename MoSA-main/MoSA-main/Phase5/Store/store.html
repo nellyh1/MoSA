@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>MoSA</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Meuseum of Science in Austin">
+	<meta name="author" content="MoSA Team">
+	<link rel = "stylesheet" href="..\global_assets\master.css">
+	<link rel= "stylesheet" href="store.css">
+	
+	
+	<script src="store.js"></script>
+	
+</head> 
+
+<body onload = "startSlides(), shoppingAvailable()">
+	<header class="header_nav">
+		<div class="header_nav_upper" >
+			<a href = "..\Home\home.html"><img id = "mosa" src = "..\global_assets\mosa_png.png"></a>
+			
+		</div>
+	
+		<div class="header_nav_lower">
+			<nav id="navbar">
+				<a href="..\.\Plan Your Visit\plan.html">Plan your visit</a>
+				<a href="..\.\Exhibitions\exhibitions.html">Exhibitions</a>
+				<a href="..\.\Store\store.html">Store</a>
+				<a href="..\.\Contact_Us\contact.php">Contact us</a>	
+			</nav>
+		</div>
+	</header>
+
+
+
+<div class = "images-container">
+
+    <div class = "theSlides fade">	
+		<div class="container">
+		<img title="space themed bedroom" id ="bedroom" src = "Assets/space bedroom2.jpg">
+		<div class = "images-container top-left">Check out our latest collection:</div>
+		<div class="images-container centered">Space themed sleep wear</div>
+		<div class = "images-container next-right"><img title = "masks" id = "masks" src= "Assets/space masks.jpeg"></div>
+		<div class = "images-container top-right"><img title = "space pajamas" id = "pjs" src = "Assets/space pajamas.jpg"></div>
+	</div></div>
+
+    <div class = "theSlides fade">
+		<div class = "container">
+			<img title = "images-container colorig_books" id = "books" src = "Assets/coloring_book.png">
+			<div class = "images-container top-center">New Coloring Book Series: </div>
+			<div class = "images-container below-center">Objects in Space</div>
+		</div>
+	</div>
+
+	<div class = "theSlides fade">
+		<div class= "container">
+			<img title = "exploring" id = "starterKit" src = "Assets/exploring.jpg">
+			<div class = "images-container far-right">At Home Exploration Starter Kit</div>
+			<div class = "images-container below-right"><img title = "briefcase" id = "kit" src = "Assets/starter_kit.jpg"></div>
+		</div>
+	</div>
+    
+</div>
+
+
+
+	<div class = "store_nav_bar">
+	<div id="storenav">
+		<span><a href = "./store.html">New Collections</a></span>
+		<span><a href = "./toys.html">Toys</a></span>
+		<span><a href = "./clothes.html">Clothes</a></span>
+		<span><a href = "./other.html">Other</a></span>
+	</div>
+
+	</div>
+
+	
+
+	<div class = "container-shopping-page" id = "shopping">
+
+			<div class="cards">
+				<div class = "card1">
+					<img class = "item-image" title ="space light" id = "star" src="Assets/starter_kit.jpg">
+					<p class = "item-name">Home Space Exploration Kit</p>
+					<p class = "item-price">$25.99</p>
+					<p><button class = "add-to-cart">Add to Cart</button></p>
+				</div>
+					
+				<div class = "card2">
+					<img class = "item-image" title ="telescope" id="tele" src="Assets/space masks.jpeg">
+					<p class = "item-name">Space Masks</p>
+					<p class = "item-price">$7.99</p>
+					<p><button class = "add-to-cart">Add to Cart</button></p>
+				</div>
+
+				<div class = "card3">
+					<img class = "item-image" title="const" id="constel" src="Assets/space pajamas.jpg">
+					<p class = "item-name">Space Pajamas</p>
+					<p class= "item-price">$15.99</p>
+					<p><button class= "add-to-cart">Add to Cart</button></p>
+				</div>
+				
+				<div class = "card4">
+					<img class = "item-image" title="glow in the dark stars" id="starglow" src="Assets/robot.jpeg">
+					<p class = "item-name">Space Robot</p>
+					<p class = "item-price">$11.99</p>
+					<p><button class= "add-to-cart">Add to Cart</button></p>
+				</div>
+
+				<div class = "card1">
+					<img class = "item-image" title ="space light" id = "star" src="Assets/star projector.jpg">
+					<p class = "item-name">Light Up Space Display</p>
+					<p class = "item-price">$17.99</p>
+					<p><button class= "add-to-cart">Add to Cart</button></p>
+				</div>
+					
+				<div class = "card2">
+					<img class = "item-image" title ="telescope" id="tele" src="Assets/telescope.jpg">
+					<p class = "item-name">Mini Telescope w/ Case</p>
+					<p class = "item-price">$10.99</p>
+					<p><button class= "add-to-cart">Add to Cart</button></p>
+				</div>
+
+				<div class = "card3">
+					<img class = "item-image" title="const" id="constel" src="Assets/constellation.png">
+					<p class = "item-name">Constellation Book</p>
+					<p class= "item-price">$12.99</p>
+					<p><button class= "add-to-cart">Add to Cart</button></p>
+				</div>
+				
+				<div class = "card4">
+					<img class = "item-image" title="glow in the dark stars" id="starglow" src="Assets/starglow.png">
+					<p class = "item-name">Glow in the Dark Stars</p>
+					<p class = "item-price">$12.00</p>
+					<p><button class= "add-to-cart">Add to Cart</button></p>
+				</div>
+
+			</div>
+				
+		<div class ="cart">
+			<span id = "cStyle">Cart</span>
+			<div class = "cart-slot">
+				<span class = "cart-item cart-header cart-colum">Items in Cart</span>
+				
+			</div>
+			<div class = "cart-items"></div>
+			<div class = "total-cost">
+				<strong class = "total-cost-text">Total</strong>
+				<span class = "total-cost-price">$0</span>
+			</div>
+			<button class = "purchase-button" type = "button" onclick = "checkLog()">Purchase</button>
+		</div>
+	</div>
+
+
+
+	<footer class="footer" style = "bottom: 0px; position: fixed;">
+	  		<p>Copyright &copy 2021 All Rights Reserved by MoSA. Last updated: March 2021</p>
+	  		
+		</footer>
+
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    navbar.classList.add("sticky")
+		  } else {
+		    navbar.classList.remove("sticky");
+		  }
+		}
+		</script>
+
+
+
+
+</body>
+
+</html>

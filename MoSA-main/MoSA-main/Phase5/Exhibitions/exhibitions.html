@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>MoSA</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Museum of Science in Austin">
+	<meta name="author" content="MoSA Team">
+	<link rel = "stylesheet" href="..\global_assets\master.css">
+	<link rel = "stylesheet" href="exhibitions.css">
+	<link rel = "stylesheet" href="modal-box.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="modal-box.js"></script>
+</head> 
+
+
+<div class="container">
+	<header class="header_nav">
+		<div class="header_nav_upper" >
+			<a href = "..\Home\home.html"><img id = "mosa" src = "..\global_assets\mosa_png.png"></a>
+		</div>
+	
+		<div class="header_nav_lower">
+			<nav id="navbar">
+				<a href="..\.\Plan Your Visit\plan.html">Plan your visit</a>
+				<a href="..\.\Exhibitions\exhibitions.html">Exhibitions</a>
+				<a href="..\.\Store\store.html">Store</a>
+
+				<a href="..\.\Contact_Us\contact.php">Contact us</a>	
+
+			</nav>
+		</div>
+	</header>
+
+<div class="grid-container">
+	<div class="text-1">
+		Journey to Mars:<br>
+		A Story of Perserverance
+	</div>
+	<div class="img-1">
+		<a class="js-open-modal" href="#" data-modal-id="popup-1">
+			<img src="Assets/perserverance.jpg">
+		</a>
+	</div>
+
+	<div class="img-2">
+		<a class="js-open-modal" href="#" data-modal-id="popup-2">
+		<img src="Assets/falcon9.jpg">
+		</a>
+	</div>
+	<div class ="text-2">
+		The Falcon 9 Has Landed!<br>
+		SpaceX Visiting Exhibition
+	</div>
+
+	<div class="img-3">
+		<a class="js-open-modal" href="#" data-modal-id="popup-3">
+		<img src="Assets/ISS.jpg">
+		</a>
+	</div>
+	<div class ="text-3">
+		Life Aboard the<br>
+		International Space Station
+	</div>
+</div>
+
+<div id="popup-1" class="modal-box">  
+  <header>
+    <a href="#" class="js-modal-close close">×</a>
+    <h3>Exhibition Details</h3>
+  </header>
+  <div class="modal-body">
+    <p>
+    	This exhibition details the development of NASA's latest Mars rover.<br><br>
+    	May 5, 2021<br>5:30 PM
+    </p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="js-modal-close">Close Button</a>
+  </div>
+</div>
+
+<div id="popup-2" class="modal-box">  
+  <header>
+    <a href="#" class="js-modal-close close">×</a>
+    <h3>Exhibition Details</h3>
+  </header>
+  <div class="modal-body">
+    <p>
+    	This exhibition details the development of SpaceX's latest rocket.<br><br>
+    	May 6, 2021<br>6:30 PM
+    </p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="js-modal-close close-button">Close Button</a>
+  </div>
+</div>
+
+<div id="popup-3" class="modal-box">  
+  <header>
+    <a href="#" class="js-modal-close close">×</a>
+    <h3>Exhibition Details</h3>
+  </header>
+  <div class="modal-body">
+    <p>
+    	Have you ever wondered what it would be like to live and work in space?<br>
+    	Follow astronauts on the International Space Station in a series of exhibitions that show their daily routines.<br><br>
+    	June 3, 2021<br>6:30 PM
+    </p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="js-modal-close close-button">Close Button</a>
+  </div>
+</div>
+
+
+<footer style = "bottom: 0px; position: fixed;">
+	<p>Copyright &copy 2021 All Rights Reserved by MoSA. Last updated: March 2021</p>	
+</footer>
+
+</div>
+</html>
+
+
+<!----
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	if (window.pageYOffset >= sticky) {
+	  navbar.classList.add("sticky")
+	} else {
+	  navbar.classList.remove("sticky");
+	}
+	}
+</script>
+-------->
+
+

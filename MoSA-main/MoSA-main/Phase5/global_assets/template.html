@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>MoSA</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Meuseum of Science in Austin">
+	<meta name="author" content="MoSA Team">
+	<link rel = "stylesheet" href="master.css">
+</head> 
+
+<body>
+	<main style="background-color: white; width: 100%; margin: 0cm; padding: 0cm; position: top">
+	    	<div class="header-img"></div>
+	</main>
+
+	<div id="navbar"; style="margin-top:3cm">
+			<a href="home.html"; style="margin-left:5cm"> Home </a>
+			<a href="plan.html"> Plan your visit </a>
+			<a href="exhibitions.html"> Exhibitions </a>
+			<a href="store.html"> Store </a>
+			<a href="contact.html"> Contact us </a>
+			
+	</div>
+
+
+
+
+
+
+
+	<footer>
+  		<p>Copyright &copy 2021 All Rights Reserved by MoSA. Last updated: March 2021</p>
+  		
+	</footer>
+
+
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky")
+	  } else {
+	    navbar.classList.remove("sticky");
+	  }
+	}
+	</script>
+
+</body>
+</html>
